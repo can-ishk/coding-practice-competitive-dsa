@@ -4,7 +4,7 @@ using namespace std;
 
 
 vector<int> smallestRange(vector<vector<int>> nums) {
-    int n = nums.size();
+    
 }
 
 
