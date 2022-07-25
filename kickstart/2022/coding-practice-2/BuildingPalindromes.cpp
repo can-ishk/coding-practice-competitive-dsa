@@ -11,6 +11,11 @@ L, R: block positions
 
 my approach: know the alphabets and their counts for each range.
 (NGL, seems slow to me, lets see how it goes.)
+PASSED TS1, TS2 TLE^^^^
+
+Observations for optimization:
+- can't mess with blocks, Li and Ri are relevant, original order of blocks is needed.
+- 
 
 */
 
@@ -23,12 +28,12 @@ int main(){ //O(n^2) time for each case
         cin>>n>>q;
         string blocks;
         cin>>blocks;
-        int num = 0;
-        for(int i=0; i<q; i++){
-            int l,r;
+        unsigned int num = 0;
+        for(unsigned int i=0; i<q; i++){
+            unsigned int l,r;
             cin>>l>>r;
-            unordered_map <char, int> umap; //O(1) space: no more than 26 pairs
-            for(int i=l-1; i<r;i++){ //O(n) time
+            unordered_map <char, unsigned int> umap; //O(1) space: no more than 26 pairs
+            for(unsigned int i=l-1; i<r;i++){ //O(n) time
                 umap[blocks[i]]++;
             }
             bool odd = false, count = true;
