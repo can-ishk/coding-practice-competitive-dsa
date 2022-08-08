@@ -15,6 +15,5 @@ int main() {
         cin>>b[i];
     sort(a.begin(),a.end());
     sort(b.begin(),b.end());
-    
     return 0;
 }
