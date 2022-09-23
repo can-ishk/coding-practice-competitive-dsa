@@ -45,7 +45,7 @@ int main() {
                 ops+=abs(min(bi1,bi));
             else if(bi1<0){
                 ops+=abs(bi1);
-                if(b[i]<0) ops-=bi;
+                if(b[i]<0 and bi<ops) ops-=bi;
             }
             else if (bi<0) {
                 ops+=abs(bi);
