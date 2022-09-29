@@ -5,6 +5,8 @@
 ## CodeChef
 + ### LTIME112D September Lunchtime 2022 Division 4 (Rated)  *Global Rank 61, rating 1380->1441*
     Solved all except INCADD(partially solved)
+
+## Google Kickstart
 + ### Google Kickstart 2022 Round F  *Global Rank 6285*
     Solved A(Sort The Fabrics) only :/
 
